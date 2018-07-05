@@ -14,7 +14,7 @@
 <ol>
 <li>To run the app, type the following command in your command prompt/terminal.git clone
 https://www.github.com/sajalarora11/flingo-full-stack.git
-(or) Donwload clone the above link to download.</li> <li>Now Open your command prompt/terminal and type the following cammand... npm install node app</li><li>Once done, open your browser and type in the following link... http://localhost:8000/ 4. Now you are good to go.</li>
+(or) Donwload clone the above link to download.</li> <li>Now Open your command prompt/terminal and type the following cammand... npm install node app</li><li>Once done, open your browser and type in the following link... http://localhost:8000/ </li><li>Now you are good to go.</li>
 </ol>
 
 <h3>Screenshots</h3>
