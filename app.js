@@ -49,7 +49,7 @@ app.get('/search', (req, res) => {
 
         });
     });
-})
+});
 
 //litsen to port..
 const port = 8000;
