@@ -1,14 +1,46 @@
-<% for(var i = 0;i<JSON.stringify(data).length;i++){ %>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<h1 class="text-center">Flights Available</h1><br><br>
 <div class="container">
     <div class="row">
-        <div class="flight-logo">
-            <div class="col-md-4">
-                <img class="img-responsive" src="<%= logo %>" height="150px" width="150px">
-            </div>
-            <div class="col-md-2">
-                <h2><%= data[i].RowDataPacket %></h2>
-            </div>
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Flights</th>
+                        <th>Departure</th>
+                        <th class="text-center">Arrival</th>
+                        <th class="text-center">Duration</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(var i= 0;i<data.length;i++){ %>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="<%= logo %>" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#"><%= data[i].flightName %></a></h4>
+                                <h5 class="media-heading"><%= data[i].type %></h5>
+                                <span>Rs. </span><span class="text-success"><strong><%= data[i].price %></strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <p><b><%= data[i].depTime %></b></p>
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong><%= data[i].arrTime %></strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong><%= data[i].time_duration %></strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">Book Now
+                        </button></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
-<% } %>
