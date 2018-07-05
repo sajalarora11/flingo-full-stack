@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Pillowtalk@111',
-    database: 'Flingo'
+    password: 'yourPassword',
+    database: 'yourDatabase'
 });
 
 connection.connect((err) => {
