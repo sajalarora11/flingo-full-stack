@@ -21,10 +21,10 @@
   http://localhost:8000/
 4.  Now you are good to go.
 
-##Screenshots
+<h3>Screenshots</h3>
 
-####Flight Search Form
+<h4>Flight Search Form</h4>
 ![screen shot 2018-07-05 at 4 36 26 pm](https://user-images.githubusercontent.com/20878052/42321518-e5544aa4-8076-11e8-891e-245048f45f6b.png)
 
-####Flight Results
+<h4>Flight Results<h4>
 ![screen shot 2018-07-05 at 4 36 52 pm](https://user-images.githubusercontent.com/20878052/42321606-365e46de-8077-11e8-96f0-45daab0fe359.png)
