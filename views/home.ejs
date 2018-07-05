@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Flingo!</title>
+        <% include partials/header.ejs %>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Flingo!</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Page 1</a></li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+          <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="jumbo">
+                            <h1 class="display-1" id="welcome">Welcome to Flingo!</h1>
+                            <p class="lead">A place where you can book flight tickets from any place, for any place within a fraction of time...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search_form" style="border:1px solid white;">
+                            <h1 class="search_heading">Search Flights</h1>
+                            <form action="/search" method="GET" class="text-center">
+                                <select name="from" id="from">
+                                    <option value="0">From:</option>
+                                    <option value="1">DEL-Indra Gandhi Int. Airport</option>
+                                    <option value="2">BOM-Chattrapati Shivaji Int. Airport</option>
+                                    <option value="3">BLR-Kempegowda Int. Airport</option>
+                                    <option value="4">MAA-Chennai International Airport</option>
+                                    <option value="5">CCU-Netaji Subhas Chandra Bose Int. Airport</option>
+                                    <option value="5">HYD-Rajiv Gandhi Int. Airport</option>
+                                    <option value="6">COK-Cochin Int. Airport</option>
+                                </select>
+                                <select name="to" id="to">
+                                    <option value="0">To:</option>
+                                    <option value="1">DEL-Indra Gandhi Int. Airport</option>
+                                    <option value="2">BOM-Chattrapati Shivaji Int. Airport</option>
+                                    <option value="3">BLR-Kempegowda Int. Airport</option>
+                                    <option value="4">MAA-Chennai International Airport</option>
+                                    <option value="5">CCU-Netaji Subhas Chandra Bose Int. Airport</option>
+                                    <option value="6">HYD-Rajiv Gandhi Int. Airport</option>
+                                    <option value="7">COK-Cochin Int. Airport</option>
+                                </select>
+                                <select name="passengers" id="passengers">
+                                    <option selected="selected" value="0">No. of passengers</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="4">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <p class="dep">Departure:<input type="date" name="departure" min="2018-07-01" ></p><br>
+                                <button>Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><br>
+        <% include partials/flights.ejs %>
+    
+        
+    </body>
+</html>

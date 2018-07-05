@@ -1,0 +1,66 @@
+header {
+    margin-top:-21px;
+    height: 800px;
+    background-image: url('../images/home.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+    color: white;
+}
+#info {
+    padding: 5px;
+    border: 1px solid purple;
+    border-radius: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.search_form {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin-top: 200px;
+    width: 550px;
+    margin-left: 50px;
+}
+.search_heading {
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+button {
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: purple;
+    padding: 10px;
+    color: white;
+}
+.jumbo{
+    width: 400px;
+    color: white;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.jumbo h1 {
+    font-size: 50px;
+}
+.to {
+    width: 300px;
+}
+.from {
+    width: 300px;
+    position: absolute;
+}
+.dep {
+    margin-left: 50px;
+}
+select {
+    width: 300px;
+    margin-bottom: 30px;
+}
+.brand-img {
+    width:300px;
+    height: 300px;
+}
